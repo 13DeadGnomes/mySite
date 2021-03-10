@@ -1,4 +1,272 @@
+@font-face {
+  font-family: "SuprematBenzinRegular";
+  src: url("../fonts/SuprematBenzinRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SuprematBenzinBold";
+  src: url("../fonts/SuprematBenzinBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SuprematBenzinMedium";
+  src: url("../fonts/SuprematBenzinMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SuprematBenzinExtraBold";
+  src: url("../fonts/SuprematBenzinExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "SuprematBenzinSemibold";
+  src: url("../fonts/SuprematBenzinSemibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+
 * {
   box-sizing: border-box;
-  background-color: #000000;
+  font-family: 'SuprematBenzinRegular', sans-serif;
+  color: #ffffff;
 }
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-family: 'SuprematBenzinMedium', sans-serif;
+  font-size: 28.5px;
+  line-height: 34.5px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 4.5px;
+  margin: 0;
+}
+
+.nameProject p {
+  font-family: 'Arial', serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 100px;
+}
+
+#noisy-canvas {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  width: 90%;
+  margin: 0 auto;
+  padding: 6vh 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+  background: transparent;
+}
+
+.blockList {
+  display: flex;
+  list-style-type: none;
+}
+
+.menuList {
+  margin-right: 30px;
+}
+
+.textBlock h1,
+.textBlock h2 {
+  font-family: 'SuprematBenzinMedium', sans-serif;
+  font-size: 106px;
+  line-height: 128px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 4.5px;
+  margin: 0;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@keyframes ping {
+  0% {
+    color: #ffffff;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    color: red;
+  }
+}
+
+.red {
+  animation: 3s linear 1s infinite alternate ping;
+}
+
+.description {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.squareLeft {
+  width: 52px;
+  height: 52px;
+  background: #ffffff;
+}
+
+.descRight ul {
+  margin: 0;
+}
+
+.descRight ul>li {
+  list-style-type: none;
+}
+
+.main {
+  position: relative;
+  z-index: 10;
+  background: transparent;
+}
+
+.blockAboutMe {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 680px;
+  margin-bottom: 100px;
+}
+
+.myPortfolio {
+  width: 380px;
+  height: 380px;
+  position: relative;
+  filter: brightness(50%);
+}
+
+.myPortfolio p {
+  position: absolute;
+  text-align: center;
+  width: inherit;
+  height: inherit;
+  top: calc(50% - 24px);
+}
+
+.me {
+  width: 430px;
+}
+
+.about {
+  margin: 140px 0 0 -120px;
+}
+
+.about ul {
+  padding-left: 18px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.freeDate {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -130px;
+}
+
+.date {
+  font-size: 120px;
+  position: relative;
+  color: #000000;
+  text-shadow: 0 0 4px #ffffff;
+}
+
+.month span {
+  font-size: 28px;
+  line-height: 31px;
+}
+
+.month {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.imageProject img {
+  width: 100%;
+  filter: brightness(120%) grayscale(100%);
+  transition: 1s;
+}
+
+.imageProject img:hover {
+  transition: 1s;
+  filter: brightness(100%) grayscale(0);
+}
+
+.projects {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.projectBlock {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.nameProject {
+  flex: 1;
+  max-width: 360px;
+}
+
+.epilog {
+  margin: 0 0 200px 80px;
+}
+
+.epilog .textBlock {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.epilog .textBlock h2 {
+  flex: 1;
+}
+
+.epilog .textBlock p {
+  flex: 2;
+  font-size: 37px;
+  line-height: 38px;
+  margin-left: -21%;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact .leftBlockContact {
+  filter: brightness(50%);
+  margin-right: 40px;
+}
+

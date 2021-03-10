@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>HELLo my friEND v.0.1</title>
   <meta name="description" content="Мой сайт">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,10 +14,22 @@
 </head>
 
 <body>
-
+<canvas id="noisy-canvas"></canvas>
   <header class="header">
     <div class="helloBlock">
       <div class="textBlock"><h1>Привет<span class="red">.</span><br> Я Александр</h1></div>
+      <div class="description">
+        <div class="squareLeft">
+
+        </div>
+        <div class="descRight">
+          <ul>
+            <li data-text="Front-end">Front-end</li>
+            <li data-text="Web-мастеринг">Web-мастеринг</li>
+            <li data-text="Контент">Контент</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="menuBlock">
       <nav class="navigation">
@@ -30,13 +42,76 @@
   </header>
 
   <main class="main">
+    <section class="blockAboutMe">
+      <div class="myPortfolio">
+        <p>Смотреть<br>список работ</p>
+        <canvas id='circle' width="380" height="380">
 
+        </canvas>
+      </div>
+
+      <div class="me">
+        <div class="freeDate">
+          <div class="date">13</div>
+          <div class="month"><span>Февраля</span> <br>доступен для работы</div>
+        </div>
+        <div class="about">
+          <p>Я frontend разработчик из Твери. Первые шаги в вёрстке начал в конце 2016 года, когда решил сменить сферу деятельности и уйти из сетевого администрирования в сторону веб-разработки.</p>
+          <ul>
+            <li>Образование средне-специальное техническое</li>
+            <li>Опыт работы 4 года</li>
+          </ul>          
+        </div>
+      </div>
+    </section>
+    <section class="myWork">
+      <div class="textBlock"><h2>отобранные<br>работы<span class="red">:</span></h2></div>
+      <div class="projects">
+        <div class="projectBlock">
+          <div class="nameProject"><h3>Компания<br>Антей-пласт</h3><p>The portfolio of Paolo Fornasier,<br>
+            a young Italian musician</p></div>
+          <div class="imageProject"><a href="#"><img src="img/antey.jpg" alt="antey-plast"></a></div>
+        </div>
+        <div class="projectBlock">
+          <div class="nameProject"><h3>Студия<br>Wizard-Web</h3><p>The portfolio of Paolo Fornasier,<br>
+            a young Italian musician</p></div>
+          <div class="imageProject"><a href="#"><img src="img/wizard.jpg" alt="wizardweb"></a></div>
+        </div>
+        <div class="projectBlock">
+          <div class="nameProject"><h3>Компания<br>Арт-Пром</h3><p>The portfolio of Paolo Fornasier,<br>
+            a young Italian musician</p></div>
+          <div class="imageProject"><a href="#"></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="epilog">
+      <div class="textBlock">
+        <h2>Я всегда<br> в поиске интересных<br> задач.</h2>
+        <p>У вас есть проект?<br> Давайте <span class="red">пообщаемся!</span></p>
+      </div>
+      <div class="contact">
+        <div class="leftBlockContact">
+          <p>email:</p>
+          <p>phone/telegram:</p>
+          <p>headhunter:</p>
+          <p>location:</p>
+        </div>
+        <div class="rightBlockContact">
+          <p><a href="#">alexandrfomin88@yandex.ru</a></p>
+          <p><a href="#">+7-900-014-88-99</a></p>
+          <p><a href="#">Резюме</a></p>
+          <p> Russian Federation</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
 
   </footer>
   <script src="js/main.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+
 </body>
 
 </html>
