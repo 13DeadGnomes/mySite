@@ -45,8 +45,8 @@ a {
 
 h3 {
   font-family: 'SuprematBenzinMedium', sans-serif;
-  font-size: 28.5px;
-  line-height: 34.5px;
+  font-size: 1.6vw;
+  line-height: 1.8vw;
   font-weight: 400;
   color: #ffffff;
   letter-spacing: 4.5px;
@@ -55,9 +55,9 @@ h3 {
 
 .nameProject p {
   font-family: 'Arial', serif;
-  font-size: 16px;
-  line-height: 24px;
-  margin-left: 100px;
+  font-size: 0.9vw;
+  line-height: 1.1vw;
+  margin-left: 6vw;
 }
 
 #noisy-canvas {
@@ -89,8 +89,8 @@ h3 {
 .textBlock h1,
 .textBlock h2 {
   font-family: 'SuprematBenzinMedium', sans-serif;
-  font-size: 106px;
-  line-height: 128px;
+  font-size: 6vw;
+  line-height: 6.5vw;
   font-weight: 400;
   color: #ffffff;
   letter-spacing: 4.5px;
@@ -149,7 +149,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   position: relative;
-  width: 680px;
+  width: 36vw;
   margin-bottom: 100px;
 }
 
@@ -166,6 +166,10 @@ h3 {
   width: inherit;
   height: inherit;
   top: calc(50% - 24px);
+}
+
+.myWork .textBlock {
+  margin-bottom: 100px;
 }
 
 .me {
@@ -237,6 +241,7 @@ h3 {
 .nameProject {
   flex: 1;
   max-width: 360px;
+  min-width: 200px;
 }
 
 .epilog {
@@ -256,8 +261,8 @@ h3 {
 
 .epilog .textBlock p {
   flex: 2;
-  font-size: 37px;
-  line-height: 38px;
+  font-size: 2vw;
+  line-height: 2.2vw;
   margin-left: -21%;
 }
 
@@ -270,3 +275,20 @@ h3 {
   margin-right: 40px;
 }
 
+@media screen and (max-width: 768px){
+  .projects {
+    width: 100%;
+  }
+
+  .main {
+    width: 90%;
+  }
+
+  .epilog {
+    margin: 0 0 200px 0;
+  }
+
+  .menuBlock {
+    display: none;
+  }
+}
