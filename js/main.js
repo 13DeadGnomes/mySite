@@ -1,6 +1,28 @@
 /* Работает с подключение JQ, создаём переменные и второй переменной сообщаем что она теперь 2д холст */
 let canvas = document.getElementById('noisy-canvas'),
     ctx = canvas.getContext('2d');
+
+let lightSh = 25;
+
+let btnLight = document.querySelector('.light');
+let h1Text = document.querySelectorAll('h1');
+let h2Text = document.querySelectorAll('h2');
+let h3Text = document.querySelectorAll('h3');
+let pText = document.querySelectorAll('p');  
+
+/*btnLight.onclick = function () {
+    btnLight.classList.toggle('lightON');
+    if (lightSh > 25) {
+        lightSh = 25;
+        for (let h1 of h1Text) {
+           h1.classList.toggle('textLight');
+        }
+    } else {
+        lightSh = 255;
+    }
+    
+}*/
+
 function main() {
     window.addEventListener('resize', updateCanvasSize);
     updateCanvasSize();
@@ -8,7 +30,7 @@ function main() {
 }
 /*Генерирует шум, чем выше значение второго множителя, тем ярче шум*/
 function getRandom() {
-    return Math.random() * 25;
+    return Math.random() * lightSh;
 }
 function render() {
     let imageData = ctx.createImageData(ctx.canvas.width, ctx.canvas.height);
@@ -36,3 +58,57 @@ let pi = Math.PI;
     ctxSecond.arc(190, 190, 180, 0, 1.5*pi, false);
     ctxSecond.stroke();
 main();
+
+function formatDate() {
+    let month = new Date();
+    let mm = month.getMonth() + 1;
+    if (mm < 10) {mm = '0' + mm;}
+
+    switch (mm) {
+        case '01':
+            mm = 'января';
+            break;
+        case '02':
+            mm = 'февраля';
+            break;
+        case '03':
+            mm = 'марта';
+            break;
+        case '04':
+            mm = 'Апреля';
+            break;
+        case '05':
+            mm = 'мая';
+            break;
+        case '06':
+            mm = 'июня';
+            break;
+        case '07':
+            mm = 'июля';
+            break;
+        case '08':
+            mm = 'августа';
+            break;
+        case '09':
+            mm = 'сентября';
+            break;
+        case '10':
+            mm = 'октября';
+            break;
+        case '11':
+            mm = 'ноября';
+            break;
+        case '12':
+            mm = 'декабря';
+            break;
+    }
+
+    return mm;
+}
+
+let dateNow = document.querySelector('.date');
+let date = new Date();
+dateNow.innerHTML = date.getDate();
+
+let month = document.querySelector('.monthText');
+month.innerHTML = formatDate();

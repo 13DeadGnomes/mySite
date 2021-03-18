@@ -86,6 +86,15 @@ h3 {
   margin-right: 30px;
 }
 
+.header .menuBlock {
+  position: fixed;
+  right: 0;
+}
+
+.textBlock {
+  overflow: hidden;
+}
+
 .textBlock h1,
 .textBlock h2 {
   font-family: 'SuprematBenzinMedium', sans-serif;
@@ -95,11 +104,22 @@ h3 {
   color: #ffffff;
   letter-spacing: 4.5px;
   margin: 0;
+  animation: 1s upperText linear forwards;
 }
 
 .header a {
   color: #fff;
   text-decoration: none;
+}
+
+@keyframes upperText {
+  0% {
+    transform: translateY(126px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes ping {
@@ -168,10 +188,6 @@ h3 {
   top: calc(50% - 24px);
 }
 
-.myWork .textBlock {
-  margin-bottom: 100px;
-}
-
 .me {
   width: 430px;
 }
@@ -185,8 +201,8 @@ h3 {
 }
 
 .about p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 0.8vw;
+  line-height: 1vw;
 }
 
 .freeDate {
@@ -203,13 +219,13 @@ h3 {
 }
 
 .month span {
-  font-size: 28px;
-  line-height: 31px;
+  font-size: 1.5vw;
+  line-height: 1.8vw;
 }
 
 .month {
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 0.9vw;
+  line-height: 1vw;
 }
 
 .main {
@@ -231,6 +247,7 @@ h3 {
 .projects {
   width: 70%;
   margin: 0 auto;
+  margin-top: 100px;
 }
 
 .projectBlock {
@@ -248,22 +265,19 @@ h3 {
   margin: 0 0 200px 80px;
 }
 
-.epilog .textBlock {
+.epilog .blockOut {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: 120px;
+  margin-bottom: 40px;
 }
 
-.epilog .textBlock h2 {
-  flex: 1;
-}
-
-.epilog .textBlock p {
+.epilog .blockOut p {
   flex: 2;
   font-size: 2vw;
   line-height: 2.2vw;
-  margin-left: -21%;
+  margin-left: -30%;
+  margin-bottom: 1.2vw;
 }
 
 .contact {
@@ -273,6 +287,36 @@ h3 {
 .contact .leftBlockContact {
   filter: brightness(50%);
   margin-right: 40px;
+
+}
+
+.light {
+  width: 140px;
+  height: 140px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 3px rgb(255 255 255);
+  background: #000000 url("../img/light.png") no-repeat;
+  background-position: -20%;
+  background-size: cover;
+  cursor: pointer;
+  outline: none;
+}
+
+.lightON {
+  box-shadow: 0 0 5px 3px rgb(0 0 0);
+  background-position: 120%;
+  background-color: #ffffff;
+}
+
+.leftBlockContact p {
+  font-size: 14px;
+}
+
+.rightBlockContact p {
+  font-size: 14px;
 }
 
 @media screen and (max-width: 768px){
@@ -291,4 +335,71 @@ h3 {
   .menuBlock {
     display: none;
   }
+
+  .description {
+    justify-content: space-between;
+  }
+
+  .about p {
+    font-size: 2vw;
+    line-height: 2.2vw;
+  }
+
+  .nameProject p {
+    display: none;
+  }
+
+  h3 {
+    font-size: 2.6vw;
+    line-height: 2.8vw;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+  .month {
+    font-size: 2.9vw;
+    line-height: 3vw;
+  }
+
+  .month span {
+    font-size: 3.5vw;
+    line-height: 3.8vw;
+  }
+
+  .freeDate {
+    display: block;
+    margin: 0;
+  }
+
+  .epilog {
+    margin: 0 0 100px 0;
+  }
+
+  .leftBlockContact {
+    display: none;
+  }
+
+  .myPortfolio {
+    display: none;
+  }
+
+  .blockAboutMe,
+  .me {
+    width: 100%;
+  }
+
+  .blockAboutMe {
+    margin-bottom: 50px;
+  }
+
+  .about {
+    margin: 0;
+  }
+
+  .about p {
+    font-size: 3vw;
+    line-height: 4.2vw;
+  }
+
 }
