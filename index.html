@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HELLo my friEND v.0.1</title>
+  <title>HELLo my friEND v.0.5</title>
   <meta name="description" content="Мой сайт">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -18,8 +18,8 @@
 <canvas id="noisy-canvas"></canvas>
   <header class="header">
     <div class="helloBlock">
-      <div class="textBlock"><h2>Привет<span class="red">.</span></h2></div>
-      <div class="textBlock"><h1>Я Александр</h1></div>
+      <div class="textBlock"><h2>Привет<span class="red">,</span></h2></div>
+      <div class="textBlock"><h1>я Александр</h1></div>
       <div class="description">
         <div class="squareLeft">
 
@@ -33,20 +33,20 @@
         </div>
       </div>
     </div>
-    <div class="menuBlock">
+   <!-- <div class="menuBlock">
       <nav class="navigation">
         <ul class="blockList">
-          <li class="menuList"><a href="#" class="menuLink">Портфолио</a></li>
+          <li class="menuList"><a href="#myWork" class="menuLink">Портфолио</a></li>
           <li class="menuList"><a href="#" class="menuLink">Контакты</a></li>
         </ul>
       </nav>
-    </div>
+    </div> -->
   </header>
 
   <main class="main">
     <section class="blockAboutMe">
       <div class="myPortfolio">
-        <p>Смотреть<br>список работ</p>
+        <p>Время<br>верстать</p>
         <canvas id='circle' width="380" height="380">
 
         </canvas>
@@ -54,8 +54,8 @@
 
       <div class="me">
         <div class="freeDate">
-          <div class="date">13</div>
-          <div class="month"><span class="monthText">Февраля</span> <br>доступен для работы</div>
+          <div class="date"></div>
+          <div class="month"><span class="monthText"></span> <br>доступен для работы</div>
         </div>
         <div class="about">
           <p>Я frontend-разработчик из Твери. Первые шаги в вёрстке начал в конце 2016 года, когда решил сменить сферу деятельности и уйти из сетевого администрирования в сторону веб-разработки.</p>
@@ -66,23 +66,21 @@
         </div>
       </div>
     </section>
-    <section class="myWork">
+    <section class="myWork" id="myWork">
       <div class="textBlock"><h2>отобранные</h2></div><div class="textBlock"><h2>работы<span class="red">:</span></h2></div>
       <div class="projects">
         <div class="projectBlock">
-          <div class="nameProject"><h3>Компания<br>Антей-пласт</h3><p>The portfolio of Paolo Fornasier,<br>
-            a young Italian musician</p></div>
-          <div class="imageProject"><a href="#"><img src="img/antey.jpg" alt="antey-plast"></a></div>
+          <div class="nameProject"><h3>Компания<br>Антей-пласт</h3><p>Литье пластмасс под давлением.</p></div>
+          <div class="imageProject"><a href="https://antey-plast.ru/" target="_blank"><img src="img/antey.jpg" alt="antey-plast"></a></div>
         </div>
         <div class="projectBlock">
-          <div class="nameProject"><h3>Студия<br>Wizard-Web</h3><p>The portfolio of Paolo Fornasier,<br>
-            a young Italian musician</p></div>
-          <div class="imageProject"><a href="#"><img src="img/wizard.jpg" alt="wizardweb"></a></div>
+          <div class="nameProject"><h3>Студия<br>Wizard-Web</h3><p>Разработка сайтов</p></div>
+          <div class="imageProject"><a href="https://wizardweb.ru/"><img src="img/wizard.jpg"  target="_blank" alt="wizardweb"></a></div>
         </div>
         <div class="projectBlock">
-          <div class="nameProject"><h3>Компания<br>Арт-Пром</h3><p>The portfolio of Paolo Fornasier,<br>
-            a young Italian musician</p></div>
-          <div class="imageProject"><a href="#"></a></div>
+          <div class="nameProject"><h3>Компания<br>Забор-Тверь</h3><p>Свёрстана форма</p></div>
+          <div class="imageProject"><a href="http://xn--80axfis.xn--h1arsp.xn--p1ai/" target="_blank"><img src="img/zabori.jpg"
+                                                                                                           alt="Заборы"></a></div>
         </div>
       </div>
     </section>
@@ -102,7 +100,7 @@
             <h2> задач.</h2>
           </div>
         </div>
-        <p>У вас есть проект?<br> Давайте <span class="red">пообщаемся!</span></p>
+        <p>У вас есть проект?<br> Давайте <a href="mailto:alexandrfomin88@yandex.ru"><span class="red">пообщаемся!</span></a></p>
       </div>
       <div class="contact">
         <div class="leftBlockContact">
@@ -112,9 +110,9 @@
           <p>location:</p>
         </div>
         <div class="rightBlockContact">
-          <p><a href="#">alexandrfomin88@yandex.ru</a></p>
-          <p><a href="#">+7-900-014-88-99</a></p>
-          <p><a href="#">Резюме</a></p>
+          <p><a href="mailto:alexandrfomin88@yandex.ru">alexandrfomin88@yandex.ru</a></p>
+          <p><a href="tel:+79000148899">+7-900-014-88-99</a></p>
+          <p><a href="https://tver.hh.ru/resume/70455e02ff0363dfaa0039ed1f6842524c6162">Резюме</a></p>
           <p> Russian Federation</p>
         </div>
       </div>
