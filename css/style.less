@@ -1,3 +1,5 @@
+@primeColor: #ffffff;
+
 @font-face {
   font-family: "SuprematBenzinRegular";
   src: url("../fonts/SuprematBenzinRegular.ttf") format("truetype");
@@ -36,7 +38,7 @@
 * {
   box-sizing: border-box;
   font-family: 'SuprematBenzinRegular', sans-serif;
-  color: #ffffff;
+  color: @primeColor;
 }
 
 a {
@@ -48,7 +50,7 @@ h3 {
   font-size: 1.6vw;
   line-height: 1.8vw;
   font-weight: 400;
-  color: #ffffff;
+  color: @primeColor;
   letter-spacing: 4.5px;
   margin: 0;
 }
@@ -101,7 +103,7 @@ h3 {
   font-size: 6vw;
   line-height: 6.5vw;
   font-weight: 400;
-  color: #ffffff;
+  color: @primeColor;
   letter-spacing: 4.5px;
   margin: 0;
   animation: 1s upperText linear forwards;
@@ -124,7 +126,7 @@ h3 {
 
 @keyframes ping {
   0% {
-    color: #ffffff;
+    color: @primeColor;
   }
 
   50% {

@@ -9,11 +9,15 @@
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <meta name="theme-color" content="#000000">
 </head>
+<script>
+  console.log('qwerty');
+  console.log('qwerty');
 
+</script>
 <body>
 <canvas id="noisy-canvas"></canvas>
   <header class="header">
@@ -26,9 +30,9 @@
         </div>
         <div class="descRight">
           <ul>
-            <li data-text="Front-end">Frontend</li>
-            <li data-text="Web-мастеринг">Web-мастеринг</li>
-            <li data-text="Контент">Контент</li>
+            <li data-text="Front-end"><p>Frontend</p></li>
+            <li data-text="Web-мастеринг"><p>Web-мастеринг</p></li>
+            <li data-text="Контент"><p>Контент</p></li>
           </ul>
         </div>
       </div>
@@ -55,13 +59,13 @@
       <div class="me">
         <div class="freeDate">
           <div class="date"></div>
-          <div class="month"><span class="monthText"></span> <br>доступен для работы</div>
+          <div class="month"><p class="monthText"></p> <br><p>доступен для работы</p></div>
         </div>
         <div class="about">
           <p>Я frontend-разработчик из Твери. Первые шаги в вёрстке начал в конце 2016 года, когда решил сменить сферу деятельности и уйти из сетевого администрирования в сторону веб-разработки.</p>
           <ul>
-            <li>Образование средне-специальное техническое</li>
-            <li>Опыт работы 4 года</li>
+            <li><p>Образование средне-специальное техническое</p></li>
+            <li><p>Опыт работы 4 года</p></li>
           </ul>          
         </div>
       </div>
@@ -110,9 +114,9 @@
           <p>location:</p>
         </div>
         <div class="rightBlockContact">
-          <p><a href="mailto:alexandrfomin88@yandex.ru">alexandrfomin88@yandex.ru</a></p>
-          <p><a href="tel:+79000148899">+7-900-014-88-99</a></p>
-          <p><a href="https://tver.hh.ru/resume/70455e02ff0363dfaa0039ed1f6842524c6162">Резюме</a></p>
+          <a href="mailto:alexandrfomin88@yandex.ru"><p>alexandrfomin88@yandex.ru</p></a>
+          <a href="tel:+79000148899"><p>+7-900-014-88-99</p></a>
+          <a href="https://tver.hh.ru/resume/70455e02ff0363dfaa0039ed1f6842524c6162"><p>Резюме</p></a>
           <p> Russian Federation</p>
         </div>
       </div>
@@ -120,7 +124,7 @@
   </main>
 
   <footer class="footer">
-    <!--<button class="light"></button>-->
+    <button class="light"></button>
   </footer>
   <script src="js/main.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>

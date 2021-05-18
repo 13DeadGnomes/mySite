@@ -4,45 +4,38 @@
   font-style: normal;
   font-weight: normal;
 }
-
 @font-face {
   font-family: "SuprematBenzinBold";
   src: url("../fonts/SuprematBenzinBold.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
 }
-
 @font-face {
   font-family: "SuprematBenzinMedium";
   src: url("../fonts/SuprematBenzinMedium.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
-
 @font-face {
   font-family: "SuprematBenzinExtraBold";
   src: url("../fonts/SuprematBenzinExtraBold.ttf") format("truetype");
   font-style: normal;
   font-weight: 900;
 }
-
 @font-face {
   font-family: "SuprematBenzinSemibold";
   src: url("../fonts/SuprematBenzinSemibold.ttf") format("truetype");
   font-style: normal;
   font-weight: 800;
 }
-
 * {
   box-sizing: border-box;
   font-family: 'SuprematBenzinRegular', sans-serif;
   color: #ffffff;
 }
-
 a {
   text-decoration: none;
 }
-
 h3 {
   font-family: 'SuprematBenzinMedium', sans-serif;
   font-size: 1.6vw;
@@ -52,20 +45,17 @@ h3 {
   letter-spacing: 4.5px;
   margin: 0;
 }
-
 .nameProject p {
   font-family: 'Arial', serif;
   font-size: 0.9vw;
   line-height: 1.1vw;
   margin-left: 6vw;
 }
-
 #noisy-canvas {
   position: fixed;
   width: 100vw;
   height: 100vh;
 }
-
 .header {
   width: 90%;
   margin: 0 auto;
@@ -76,25 +66,20 @@ h3 {
   z-index: 10;
   background: transparent;
 }
-
 .blockList {
   display: flex;
   list-style-type: none;
 }
-
 .menuList {
   margin-right: 30px;
 }
-
 .header .menuBlock {
   position: fixed;
   right: 0;
 }
-
 .textBlock {
   overflow: hidden;
 }
-
 .textBlock h1,
 .textBlock h2 {
   font-family: 'SuprematBenzinMedium', sans-serif;
@@ -106,69 +91,55 @@ h3 {
   margin: 0;
   animation: 1s upperText linear forwards;
 }
-
 .header a {
   color: #fff;
   text-decoration: none;
 }
-
 @keyframes upperText {
   0% {
     transform: translateY(126px);
   }
-
   100% {
     transform: translateY(0);
   }
 }
-
 @keyframes ping {
   0% {
     color: #ffffff;
   }
-
   50% {
     color: transparent;
   }
-
   100% {
     color: red;
   }
 }
-
 .red {
   animation: 3s linear 1s infinite alternate ping;
 }
-
 .description {
   display: flex;
   justify-content: flex-end;
 }
-
 .squareLeft {
   width: 52px;
   height: 52px;
   background: #ffffff;
 }
-
 .descRight ul {
   margin: 0;
 }
-
-.descRight ul>li {
+.descRight ul > li {
   list-style-type: none;
 }
-
-.descRight ul>li>p {
+.descRight ul > li > p {
   margin: 0;
 }
-
 .main {
   position: relative;
   z-index: 10;
   background: transparent;
 }
-
 .blockAboutMe {
   display: flex;
   justify-content: space-between;
@@ -176,14 +147,12 @@ h3 {
   width: 36vw;
   margin-bottom: 100px;
 }
-
 .myPortfolio {
   width: 380px;
   height: 380px;
   position: relative;
   filter: brightness(50%);
 }
-
 .myPortfolio p {
   position: absolute;
   text-align: center;
@@ -191,95 +160,77 @@ h3 {
   height: inherit;
   top: calc(50% - 24px);
 }
-
 .me {
   width: 430px;
 }
-
 .about {
   margin: 140px 0 0 -120px;
 }
-
 .about ul {
   padding-left: 18px;
 }
-
 .about p {
   font-size: 0.8vw;
   line-height: 1vw;
 }
-
 .freeDate {
   display: flex;
   justify-content: space-between;
   margin-left: -130px;
 }
-
 .date {
   font-size: 120px;
   position: relative;
   color: #000000;
   text-shadow: 0 0 4px #ffffff;
 }
-
 .month span {
   font-size: 1.5vw;
   line-height: 1.8vw;
 }
-
 .month {
   font-size: 0.9vw;
   line-height: 1vw;
 }
-
 .month p {
   margin: 0;
 }
-
 .main {
   width: 80%;
   margin: 0 auto;
 }
-
 .imageProject img {
   width: 100%;
   filter: brightness(120%) grayscale(100%);
   transition: 1s;
 }
-
 .imageProject img:hover {
   transition: 1s;
   filter: brightness(100%) grayscale(0);
 }
-
 .projects {
   width: 70%;
   margin: 0 auto;
   margin-top: 100px;
 }
-
 .projectBlock {
   display: flex;
   margin-bottom: 80px;
 }
-
 .nameProject {
   flex: 1;
   max-width: 360px;
   min-width: 200px;
 }
-
 .epilog {
   margin: 0 0 200px 80px;
 }
-
 .epilog .blockOut {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 40px;
 }
-
 .epilog .blockOut p {
   flex: 2;
   font-size: 2vw;
@@ -289,17 +240,13 @@ h3 {
   position: relative;
   z-index: 10;
 }
-
 .contact {
   display: flex;
 }
-
 .contact .leftBlockContact {
   filter: brightness(50%);
   margin-right: 40px;
-
 }
-
 .light {
   width: 70px;
   height: 70px;
@@ -307,7 +254,7 @@ h3 {
   right: 40px;
   bottom: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 5px 3px rgb(255 255 255);
+  box-shadow: 0 0 5px 3px #ffffff;
   /*background: #000000 url("../img/light.png") no-repeat;
   background-position: -20%;
   background-size: cover;*/
@@ -315,111 +262,87 @@ h3 {
   cursor: pointer;
   outline: none;
 }
-
 .lightON {
-  box-shadow: 0 0 5px 3px rgb(0 0 0);
+  box-shadow: 0 0 5px 3px #000000;
   background-position: 120%;
   background-color: #000000;
 }
-
 .leftBlockContact p {
   font-size: 14px;
 }
-
 .rightBlockContact p {
   font-size: 14px;
 }
-
 body .textLight {
   color: #000;
   font-weight: bold;
 }
-
 .malevich {
   background: #000000;
 }
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .projects {
     width: 100%;
   }
-
   .main {
     width: 90%;
   }
-
   .epilog {
     margin: 0 0 200px 0;
   }
-
   .menuBlock {
     display: none;
   }
-
   .description {
     justify-content: space-between;
   }
-
   .about p {
     font-size: 2vw;
     line-height: 2.2vw;
   }
-
   .nameProject p {
     display: none;
   }
-
   h3 {
     font-size: 2.6vw;
     line-height: 2.8vw;
   }
-
 }
-
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
   .month {
     font-size: 2.9vw;
     line-height: 3vw;
   }
-
   .month span {
     font-size: 3.5vw;
     line-height: 3.8vw;
   }
-
   .freeDate {
     display: block;
     margin: 0;
   }
-
   .epilog {
     margin: 0 0 100px 0;
   }
-
   .leftBlockContact {
     display: none;
   }
-
   .myPortfolio {
     display: none;
   }
-
   .blockAboutMe,
   .me {
     width: 100%;
   }
-
   .blockAboutMe {
     margin-bottom: 50px;
   }
-
   .about {
     margin: 0;
   }
-
   .about p {
     font-size: 3vw;
     line-height: 4.2vw;
   }
-
 }
+/*# sourceMappingURL=style.css.map */

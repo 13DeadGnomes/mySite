@@ -8,20 +8,36 @@ let btnLight = document.querySelector('.light');
 let h1Text = document.querySelectorAll('h1');
 let h2Text = document.querySelectorAll('h2');
 let h3Text = document.querySelectorAll('h3');
-let pText = document.querySelectorAll('p');  
+let pText = document.querySelectorAll('p');
+let squareLeft = document.querySelector('.squareLeft');
 
-/*btnLight.onclick = function () {
+function replacement() {
+    for (let h1 of h1Text) {
+        h1.classList.toggle('textLight');
+    }
+    for (let h2 of h2Text) {
+        h2.classList.toggle('textLight');
+    }
+    for (let h3 of h3Text) {
+        h3.classList.toggle('textLight');
+    }
+    for (let p of pText) {
+        p.classList.toggle('textLight');
+    }
+    squareLeft.classList.toggle('malevich');
+
+}
+
+btnLight.onclick = function () {
     btnLight.classList.toggle('lightON');
     if (lightSh > 25) {
         lightSh = 25;
-        for (let h1 of h1Text) {
-           h1.classList.toggle('textLight');
-        }
+        replacement();
     } else {
         lightSh = 255;
+        replacement();
     }
-    
-}*/
+}
 
 function main() {
     window.addEventListener('resize', updateCanvasSize);
